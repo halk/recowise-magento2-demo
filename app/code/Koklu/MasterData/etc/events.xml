@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="catalog_product_save_after">
+        <observer name="recommender_masterData" instance="Koklu\MasterData\Model\Observer\Catalog\Product\Save" method="process" />
+    </event>
+    <event name="catalog_product_delete_after_done">
+        <observer name="recommender_masterData" instance="Koklu\MasterData\Model\Observer\Catalog\Product\Delete" method="process" />
+    </event>
+    <event name="koklu_masterdata_not_salable_product_save">
+        <observer name="recommender_masterData" instance="Koklu\MasterData\Model\Observer\Catalog\Product\Delete" method="process" />
+    </event>
+</config>

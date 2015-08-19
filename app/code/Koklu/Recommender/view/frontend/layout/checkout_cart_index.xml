@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.cart.items">
+            <block class="Koklu\Recommender\Block\Checkout\Cart\Similar" name="recommender.checkout.cart.similar" template="product/widget/content/grid.phtml" after="checkout.cart.methods.bottom">
+                <action method="setTitle">
+                    <argument translate="true" name="text" xsi:type="string">Items which are similar to those in your basket</argument>
+                </action>
+                <action method="setProductsCount">
+                    <argument name="count" xsi:type="number">5</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <remove name="checkout.cart.crosssell"/>
+    </body>
+</page>

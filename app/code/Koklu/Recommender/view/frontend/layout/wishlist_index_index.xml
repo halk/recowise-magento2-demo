@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Koklu\Recommender\Block\Customer\Wishlist\InCommon" name="recommender.customer.wishlist.inCommon" template="product/widget/content/grid.phtml" after="customer.wishlist">
+                <action method="setTitle">
+                    <argument translate="true" name="text" xsi:type="string">Other customers have added these as well</argument>
+                </action>
+                <action method="setProductsCount">
+                    <argument name="count" xsi:type="number">5</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
