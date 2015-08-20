@@ -1,0 +1,32 @@
+.idea
+.DS_Store
+
+# very drastic but Magento2 composer install copies files into root folder
+/*
+
+# project stuff
+!/.gitignore
+!/composer.json
+!/composer.lock
+!/LICENSE
+!/README.md
+
+# demo source code mixed with ignored stuff
+!/app
+/app/*
+!/app/code
+/app/code/*
+!/app/code/Koklu
+!/dev
+/dev/*
+!/dev/shell
+/dev/shell/*
+!/dev/shell/masterdata.php
+!/lib
+/lib/*
+!/lib/internal
+/lib/internal/*
+!/lib/internal/Koklu
+!/pub
+/pub/*
+!/pub/pub
