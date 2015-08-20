@@ -1,6 +1,6 @@
 {
     "name": "halk/recowise-magento2-demo",
-    "description": "Magento2 demo for multi-purpose recommendation framework recowise",
+    "description": "Magento2 demo for the multi-purpose recommendation framework RecoWise",
     "version": "0.1.0",
     "type": "library",
     "keywords": ["demo", "recommender", "recommendation engine", "magento2"],
